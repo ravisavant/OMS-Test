@@ -39,7 +39,7 @@ public class LoginPageTest extends TestBase {
         String title = loginPage.validatingLoginPageTitle();
         System.out.println(title);
 
-        if(title.equals("Order Management System new Version 2")) {
+        if(title.equals("Order Management System new Version 3")) {
             test.pass("Title matched");  
             // 👉 ADDED: mark as pass in report
         } else {
@@ -47,7 +47,7 @@ public class LoginPageTest extends TestBase {
             // 👉 ADDED: mark as fail in report
         }
 
-        Assert.assertEquals(title,"Order Management System new Version 2","LoginPage is not correct");
+        Assert.assertEquals(title,"Order Management System new Version 3","LoginPage is not correct");
     }
 
     @Test
