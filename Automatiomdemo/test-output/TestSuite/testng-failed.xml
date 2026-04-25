@@ -3,11 +3,19 @@
 <suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Tests(failed)">
     <classes>
+      <class name="com.test.OrderSearchPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="orderSearchTest"/>
+        </methods>
+      </class> <!-- com.test.OrderSearchPageTest -->
       <class name="com.test.LoginPageTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="loginPageTitleTest"/>
+          <include name="loginTest"/>
         </methods>
       </class> <!-- com.test.LoginPageTest -->
     </classes>
